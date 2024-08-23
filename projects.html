@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidan's Projects</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="nav-bar">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="contact.html">Contact Info</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="education.html">Education</a></li>
+          </ul>
+      </nav>
+    </header>
+    <div class="bg-image">
+      <h2 class="fallout-logo">Personal Website</h2>
+      <p>I created this website to demonstrate my proficiency in HTML and CSS. I personalized it with vibrant themes and a unique font to reflect my creative approach.</p>
+    
+      <h2 class="fallout-logo">Menu Randomizer</h2>
+      <p>This was one of my initial programming projects, which I developed independently and further enhanced during my studies at Florida Gulf Coast University. While working in the culinary industry, I conceived the idea of practicing my C++ skills by creating a program that can take one or more lists of items and randomly generate a menu. So far, the project has been successful, but I aim to expand its capabilities by developing a website that can produce various menu styles and allow users to print their personalized menus.</p>
+    </div>
+    
+    <div class="bg-image2">
+      <h2 class="fallout-logo">Natural Computing Algorithms</h2>
+      <p>In the "Intro to Natural Computing" course at Florida Gulf Coast University, I explored how natural phenomena inspire algorithms in coding and animation. The course covered various methods, including Boids algorithm, Lindenmayer Systems, and Cellular Automata, all of which simulate natural occurrences. For instance, the Boids algorithm simulates flocking behavior in birds by defining rules for individual particle movement and interactions, commonly used in animation and visual effects.</p>
+    
+      <h2 class="fallout-logo">SQL Database</h2>
+      <p>During the "Intro to Data Science" course, I learned about database design and implementation using SQL. In a group project, we developed a database to store cryptocurrency values and customer transaction data, inspired by applications like Coinbase. This project deepened my understanding of database structures and their practical applications.</p>
+    </div>
+    
+    <div class="bg-image3">
+      <h2 class="fallout-logo">Pharmaceutical SRS Document</h2>
+      <p>As part of the "Requirements Engineering & Analysis" course, I authored a Software Requirements Specification (SRS) document for a fictional pharmaceutical software project. This document outlined the necessary system specifications and tools for development, focusing extensively on both functional and non-functional requirements.</p>
+    
+      <h2 class="fallout-logo">ChatGPT Web Scraper</h2>
+      <p>In the "Software Testing" course, I collaborated with two classmates to create a web scraper designed to interact with OpenAI's ChatGPT. Our project aimed to test ChatGPT's responses to various prompts, overcoming challenges posed by the platform's advanced bot detection mechanisms.</p>
+    
+      <h2 class="fallout-logo">Calculator Clock</h2>
+      <p>This Python project calculates the time remaining until a specified future event or the time elapsed since a past event.</p>
+    </div>
+    
+    <div id="root"></div>
+
+    <footer>
+        <p>&copy; 2024 Aidan Premeau. All rights reserved.</p>
+      </footer>
+    
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".bg-image").ripples({
+          resolution: 200,
+          perturbance: 0.01,
+        });
+      });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $(".bg-image2").ripples({
+            resolution: 200,
+            perturbance: 0.01,
+          });
+        });
+      </script>
+      <script>
+        $(document).ready(function(){
+          $(".bg-image3").ripples({
+            resolution: 200,
+            perturbance: 0.01,
+          });
+        });
+      </script>
+  </body>
+</html>

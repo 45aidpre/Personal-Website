@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidan's Contact Info</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="nav-bar">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="contact.html">Contact Info</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="education.html">Education</a></li>
+          </ul>
+      </nav>
+    </header>
+    <div class="bg-image">
+      <h2 class="fallout-logo">
+        Email: <a href="mailto:aidanpremeau@gmail.com">aidanpremeau@gmail.com</a>
+      </h2>
+      <h2 class="fallout-logo">
+        GitHub: <a href="https://github.com/45aidpre" target="_blank">https://github.com/45aidpre</a>
+      </h2>
+      <h2 class="fallout-logo">
+        Phone Number: <a href="tel:12398340419">(239)-834-0419</a>
+      </h2>
+      <h2 class="fallout-logo">
+        LinkedIn: <a href="https://linkedin.com/in/aidan-premeau-a7391a315" target="_blank">linkedin.com/in/aidan-premeau-a7391a315</a>
+      </h2>
+    </div>
+    <div id="root"></div>
+
+    <footer>
+        <p>&copy; 2024 Aidan Premeau. All rights reserved.</p>
+      </footer>
+    
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".bg-image").ripples({
+          resolution: 200,
+          perturbance: 0.01,
+        });
+      });
+    </script>
+  </body>
+</html>

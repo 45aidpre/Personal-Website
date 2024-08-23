@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Overseer';
+    src: url('./assets/overseer/Overseer Bold Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  :root {
+    font-family: 'Overseer', sans-serif;
+    --fallout-yellow: #d4c073;
+    --fallout-dark: #2c2c2c;
+    --fallout-light: #f4f4f4;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #010609;
+    color: #fff773;
+    padding: 10px 0;
+  }
+  
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #0b0101;
+    padding-bottom: 0.5px;
+  }
+  
+  .nav-bar li {
+    margin: 0 15px;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #fff773;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar a:hover {
+    color: #3a0ccf;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  .bg-image, .bg-image2, .bg-image3 {
+    background-size: cover; 
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg-image {
+    background: url('./assets/BeardVerse.jpg') no-repeat center center;
+    min-height: 80vh; 
+  }
+  
+  .bg-image2 {
+    background: url('./assets/beardverse2.jpg') no-repeat center center;
+    min-height: 80vh; 
+  }
+  
+  .bg-image3 {
+    background: url('./assets/universe.jpg') no-repeat center center;
+    background-size: cover; 
+    overflow: hidden;
+    position: relative;
+    min-height: 120vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1.fallout-logo {
+    font-size: 5rem;
+    font-family: 'Overseer', sans-serif;
+    color: var(--fallout-yellow);
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px var(--fallout-dark), -2px -2px 4px var(--fallout-dark);
+    margin-bottom: 10px;
+  }
+  
+  h2.fallout-logo {
+    font-family: 'Overseer', sans-serif;
+    font-size: 2.5rem;
+    color: var(--fallout-yellow); 
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 40px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px var(--fallout-dark);
+  }
+  
+  p {
+    text-align: center; 
+    font-size: 1.2rem; 
+    color: var(--fallout-yellow); 
+    margin: 20px 0; 
+    max-width: 800px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  footer {
+    background-color: #010609;
+    color: #fff773;
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+  }
+  
