@@ -140,12 +140,12 @@
     text-align: right;
     padding: 10px;
     width: 100%;
-
   }
   
   footer p {
     margin: 0;
     font-size: 0.9rem;
+    padding-left: 400px;
     
   }
   
