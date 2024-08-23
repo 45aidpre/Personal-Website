@@ -8,6 +8,7 @@
   :root {
     font-family: 'Overseer', sans-serif;
     --fallout-yellow: #d4c073;
+    --fallout-yellow2: #c29d0c;
     --fallout-dark: #2c2c2c;
     --fallout-light: #f4f4f4;
   }
@@ -59,13 +60,29 @@
   
   a {
     font-weight: 500;
-    color: #646cff;
+    color: #c77c0b;
     text-decoration: inherit;
   }
   
   main {
     flex: 1;
   }
+
+  img {
+    width: 250px; 
+    height: auto; 
+    
+}
+
+.img-container {
+    display: inline-block; 
+    padding: 10px; 
+    border: 5px solid var(--fallout-yellow2); 
+    border-radius: 15px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+    background-color: var(--fallout-dark);
+}
+
   
   .bg-image, .bg-image2, .bg-image3 {
     background-size: cover; 
@@ -116,7 +133,7 @@
   h2.fallout-logo {
     font-family: 'Overseer', sans-serif;
     font-size: 2.5rem;
-    color: var(--fallout-yellow); 
+    color: var(--fallout-yellow2); 
     text-align: center;
     margin-top: 10px; 
     margin-bottom: 40px; 
@@ -127,8 +144,8 @@
   
   p {
     text-align: center; 
-    font-size: 1.2rem; 
-    color: var(--fallout-yellow); 
+    font-size: 1.7rem; 
+    color: var(--fallout-yellow2); 
     margin: 20px 0; 
     max-width: 800px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -145,7 +162,7 @@
   footer p {
     margin: 0;
     font-size: 0.9rem;
-    padding-left: 400px;
+    padding-left: 390px;
     
   }
   
